@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  coordinator:
+    build: ./agents/coordinator_agent
+    environment:
+      - AWS_REGION=${AWS_REGION}
+    env_file:
+      - .env
